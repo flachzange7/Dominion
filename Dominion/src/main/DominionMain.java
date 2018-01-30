@@ -1,6 +1,6 @@
 package main;
 import daten.Vorrat;
-import daten.Karte;
+import karten.*;
 
 public class DominionMain 
 {
@@ -9,9 +9,9 @@ public class DominionMain
 	{
 		Vorrat m_vorrat = new Vorrat();
 		
-		Karte kupfer = new Karte();
-		Karte silber = new Karte();
-		Karte gold = new Karte();
+		Kupfer kupfer = new Kupfer();
+		Silber silber = new Silber();
+		Gold gold = new Gold();
 		m_vorrat.addKarte(kupfer, 100);
 		m_vorrat.addKarte(silber, 50);
 		m_vorrat.addKarte(gold, 30);

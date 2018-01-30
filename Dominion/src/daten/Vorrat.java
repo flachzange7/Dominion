@@ -21,7 +21,7 @@ public class Vorrat
 	{
 		for(int i = 0; i != m_stapel.size(); i++)
 		{
-			System.out.println("Kartenname: " + m_stapel.get(i).anzahl());
+			System.out.println(m_stapel.get(i).getKarte().name()+ ": " + m_stapel.get(i).anzahl());
 		}
 	}
 	

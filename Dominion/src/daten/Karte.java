@@ -7,44 +7,44 @@ public abstract class Karte {
 	private String m_nutzen;
 	private String m_typ;
 	
-	Karte(){
+	public Karte(){
 		
 	}
 	
-	private void kosten_set(int kosten) {
+	public void setKosten(int kosten) {
 		m_kosten = kosten;
 	}
 	
-	private void name_set(String name) {
+	public void setName(String name) {
 		m_name = name;
 	}
 	
-	private void nutzen_set(String nutzen) {
+	public void setNutzen(String nutzen) {
 		m_nutzen = nutzen;
 	}
 	
-	private void typ_set(String typ) {
+	public void setType(String typ) {
 		m_typ = typ;
 	}
 	
-	private int kosten_get() {
+	public int kosten() {
 		return m_kosten;
 	}
 	
-	private String name_get() {
+	public String name() {
 		return m_name;
 	}
 	
-	private String nutzen_get() {
+	public String nutzen() {
 		return m_nutzen;
 	}
 	
-	private String typ_get() {
+	public String typ() {
 		return m_typ;
 	}
 	
 	private void init(int kosten) {
-		kosten_set(kosten);
+		setKosten(kosten);
 	}
 	
 }
