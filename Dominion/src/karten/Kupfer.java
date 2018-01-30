@@ -7,8 +7,7 @@ public class Kupfer extends Karte
 	private int m_wert;
 	public Kupfer()
 	{
-		setName("Kupfer");
-		setKosten(0);
+		super(1, 0, "Kupfer", KartenTyp.GELD);
 		m_wert = 1;
 	}
 	

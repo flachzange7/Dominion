@@ -1,27 +1,45 @@
 package daten;
-
+import karten.*;
 
 import java.util.ArrayList;
 
 public class Vorrat 
 {
-	private ArrayList<Kartenstapel> m_stapel;
+	private ArrayList<EinheitsKartenStapel> m_stapel;
 	public Vorrat()
 	{
-		m_stapel = new ArrayList<Kartenstapel>();
+		m_stapel = new ArrayList<EinheitsKartenStapel>();
+		
+		// initialisiere Vorrat von Basis-Spiel
+		EinheitsKartenStapel kupferStapel = new EinheitsKartenStapel(new Kupfer(), 100);
+		EinheitsKartenStapel silberStapel = new EinheitsKartenStapel(new Silber(), 80);
+		EinheitsKartenStapel goldStapel = new EinheitsKartenStapel(new Gold(), 50);
+		
+		EinheitsKartenStapel anwesenStapel = new EinheitsKartenStapel(new Anwesen(), 20);
+
+		m_stapel.add(kupferStapel);
+		m_stapel.add(silberStapel);
+		m_stapel.add(goldStapel);
+		m_stapel.add(anwesenStapel);
+		
 	}
 	
-	public void addKarte(Karte karte, int anzahl)
+	public Karte nimmKarteVonVorrat(int id)
 	{
-		Kartenstapel neuerStapel = new Kartenstapel(karte, anzahl);
-		m_stapel.add(neuerStapel);
+		for(int i = 0; i != m_stapel.size(); i++)
+			if(m_stapel.get(i).karte().id() == id)
+				return m_stapel.get(i).zieheKarte();
+		
+		return null;
 	}
+	
+	
 	
 	public void printVorrat()
 	{
 		for(int i = 0; i != m_stapel.size(); i++)
 		{
-			System.out.println(m_stapel.get(i).getKarte().name()+ ": " + m_stapel.get(i).anzahl());
+			System.out.println(m_stapel.get(i).karte().name()+ ": " + m_stapel.get(i).anzahl());
 		}
 	}
 	

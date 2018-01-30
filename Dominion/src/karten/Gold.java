@@ -1,14 +1,14 @@
 package karten;
 
 import daten.Karte;
+import daten.Karte.KartenTyp;
 
 public class Gold extends Karte 
 {
 	private int m_wert;
 	public Gold()
 	{
-		setName("Gold");
-		setKosten(6);
+		super(3, 6, "Gold", KartenTyp.GELD);
 		m_wert = 3;
 	}
 	

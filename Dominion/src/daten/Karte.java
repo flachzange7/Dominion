@@ -2,29 +2,36 @@ package daten;
 
 public abstract class Karte {
 
+	private int m_id;
 	private int m_kosten;
 	private String m_name;
+	private KartenTyp m_typ;
+	
 	private String m_nutzen;
-	private String m_typ;
 	
-	public Karte(){
-		
-	}
+	public enum KartenTyp
+	{
+		GELD, PUNKTE, AKTION_ANGRIFF, AKTION_REAKTION
+	};
 	
-	public void setKosten(int kosten) {
+	public Karte(int id, int kosten, String name, KartenTyp typ)
+	{
+		m_id = id;
 		m_kosten = kosten;
+		m_name = name;
+		m_typ = typ;
 	}
 	
-	public void setName(String name) {
-		m_name = name;
-	}
+	
+	
 	
 	public void setNutzen(String nutzen) {
 		m_nutzen = nutzen;
 	}
 	
-	public void setType(String typ) {
-		m_typ = typ;
+	public int id()
+	{
+		return m_id; 
 	}
 	
 	public int kosten() {
@@ -39,12 +46,12 @@ public abstract class Karte {
 		return m_nutzen;
 	}
 	
-	public String typ() {
+	public KartenTyp typ() {
 		return m_typ;
 	}
 	
-	private void init(int kosten) {
-		setKosten(kosten);
-	}
+	//private void init(int kosten) {
+	//	setKosten(kosten);
+	//}
 	
 }
