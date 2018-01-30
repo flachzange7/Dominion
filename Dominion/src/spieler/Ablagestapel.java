@@ -26,6 +26,11 @@ public class Ablagestapel {
 		return m_stapel;
 	}
 	
+	public void leeren()
+	{
+		m_stapel.clear();
+	}
+	
 	@Override
 	public String toString()
 	{

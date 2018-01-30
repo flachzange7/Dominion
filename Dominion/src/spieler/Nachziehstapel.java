@@ -29,6 +29,13 @@ public class Nachziehstapel {
 		return m_stapel;
 	}
 	
+	public Karte bekommeKarte()
+	{
+		Karte karte = m_stapel.get(0);
+		m_stapel.remove(0);
+		return karte;
+	}
+	
 	@Override
 	public String toString()
 	{
