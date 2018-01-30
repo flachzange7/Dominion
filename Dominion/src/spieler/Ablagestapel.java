@@ -16,14 +16,23 @@ public class Ablagestapel {
 		return m_stapel.size();
 	}
 	
-	private void ablegen(Karte karte)
+	public void ablegen(Karte karte)
 	{
 		m_stapel.add(karte);
 	}
 	
-	public ArrayList stapel()
+	public ArrayList<Karte> stapel()
 	{
 		return m_stapel;
+	}
+	
+	@Override
+	public String toString()
+	{
+		String ausgabe = "";
+		for(int i = 0; i != m_stapel.size(); i++)
+			ausgabe += m_stapel.get(i).name() + ", ";
+		return ausgabe;
 	}
 	
 }

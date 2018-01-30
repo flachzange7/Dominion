@@ -2,6 +2,8 @@ package spieler;
 
 import java.util.Collections;
 
+import daten.Karte;
+
 public class Spieler {
 	
 	private Hand m_hand;
@@ -15,9 +17,20 @@ public class Spieler {
 		m_nachziehstapel = new Nachziehstapel();
 	}
 	
-	private void mischen()
+	public void mischen()
 	{
-		Collections.copy(m_ablagestapel.stapel(), m_nachziehstapel.stapel());
+		m_nachziehstapel = new Nachziehstapel(m_ablagestapel);
+		m_nachziehstapel.deckMischen();
+	}
+	
+	public void spielerBekommtKarte(Karte karte)
+	{
+		m_ablagestapel.ablegen(karte);
+	}
+	
+	public void printSpielerInfo()
+	{
+		System.out.println("Stapel: " + m_nachziehstapel);
 	}
 	
 }
