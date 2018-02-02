@@ -68,13 +68,13 @@ public class Spieler {
 	
 	public void init(Vorrat m_vorrat)
 	{
-		for(int i = 0; i != 7; i++) {
-			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat(1));
+		/*for(int i = 0; i != 7; i++) {
+			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat("1"));
 		}
 		for(int i = 0; i != 3; i++) {
-			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat(4));
+			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat("4"));
 		}
 		mischen();
-		standardKartenZiehen();
+		standardKartenZiehen();*/
 	}
 }

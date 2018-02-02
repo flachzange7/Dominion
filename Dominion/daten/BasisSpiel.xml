@@ -1,0 +1,9 @@
+<Karten>
+	<Karte id="B1" name="Anwesen" typ="punkte" kosten="1" wert="1" anzahl="20"></Karte>
+	<Karte id="B2" name="Herzogtum" typ="punkte" kosten="5" wert="2"
+		anzahl="10">
+	</Karte>
+	<Karte id="B3" name="Provinz" typ="punkte" kosten="8" wert="3"
+		anzahl="10">
+	</Karte>
+</Karten>

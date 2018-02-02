@@ -2,7 +2,7 @@ package daten;
 
 public abstract class Karte {
 
-	private int m_id;
+	private String m_id;
 	private int m_kosten;
 	private String m_name;
 	private KartenTyp m_typ;
@@ -14,7 +14,7 @@ public abstract class Karte {
 		GELD, PUNKTE, AKTION_ANGRIFF, AKTION_REAKTION
 	};
 	
-	public Karte(int id, int kosten, String name, KartenTyp typ)
+	public Karte(String id, int kosten, String name, KartenTyp typ)
 	{
 		m_id = id;
 		m_kosten = kosten;
@@ -29,7 +29,7 @@ public abstract class Karte {
 		m_nutzen = nutzen;
 	}
 	
-	public int id()
+	public String id()
 	{
 		return m_id; 
 	}

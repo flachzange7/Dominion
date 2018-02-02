@@ -10,7 +10,7 @@ public class Vorrat
 	{
 		m_stapel = new ArrayList<EinheitsKartenStapel>();
 		
-		// initialisiere Vorrat von Basis-Spiel
+		/* initialisiere Vorrat von Basis-Spiel
 		EinheitsKartenStapel kupferStapel = new EinheitsKartenStapel(new Kupfer(), 100);
 		EinheitsKartenStapel silberStapel = new EinheitsKartenStapel(new Silber(), 80);
 		EinheitsKartenStapel goldStapel = new EinheitsKartenStapel(new Gold(), 50);
@@ -20,11 +20,16 @@ public class Vorrat
 		m_stapel.add(kupferStapel);
 		m_stapel.add(silberStapel);
 		m_stapel.add(goldStapel);
-		m_stapel.add(anwesenStapel);
+		m_stapel.add(anwesenStapel); */
 		
 	}
 	
-	public Karte nimmKarteVonVorrat(int id)
+	public void addStapel(EinheitsKartenStapel stapel)
+	{
+		m_stapel.add(stapel);
+	}
+	
+	public Karte nimmKarteVonVorrat(String id)
 	{
 		for(int i = 0; i != m_stapel.size(); i++)
 			if(m_stapel.get(i).karte().id() == id)
