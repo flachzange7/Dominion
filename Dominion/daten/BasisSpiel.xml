@@ -6,20 +6,56 @@
 	<Karte id="B5" name="Silber" typ="geld" kosten="3" wert="2" anzahl="50"></Karte>
 	<Karte id="B6" name="Gold" typ="geld" kosten="6" wert="3" anzahl="30"></Karte>
 	<Karte id="B7" name="Fluch" typ="punkte" kosten="0" wert="-1" anzahl="30"></Karte>
-	<Karte id="B8" name="Keller" typ="aktion" kosten="2" wert="0" anzahl="30">
+	<Karte id="B8" name="Töpferei" typ="aktion" kosten="6" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B9" name="Kapelle" typ="aktion" kosten="2" wert="0" anzahl="30">
+	<Karte id="B9" name="Banditin" typ="aktion" kosten="5" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B10" name="Burggraben" typ="reaktion" kosten="2" wert="0" anzahl="30">
+	<Karte id="B10" name="Bürokrat" typ="aktion" kosten="4" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B11" name="Der Vorläufer" typ="aktion" kosten="2" wert="0" anzahl="30">
+	<Karte id="B11" name="Keller" typ="aktion" kosten="2" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B12" name="Der Händler" typ="aktion" kosten="3" wert="0" anzahl="30">
+	<Karte id="B12" name="Kapelle" typ="aktion" kosten="2" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B13" name="Der Vasall" typ="aktion" kosten="3" wert="0" anzahl="30">
+	<Karte id="B13" name="Ratsversammlung" typ="aktion" kosten="5" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B14" name="Dorf" typ="aktion" kosten="3" wert="0" anzahl="30">
+	<Karte id="B14" name="Jahrmarkt" typ="aktion" kosten="5" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B15" name="Handwerker" typ="aktion" kosten="3" wert="0" anzahl="30">
+	<Karte id="B15" name="Gärten" typ="punkte" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B16" name="Vorbotin" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B17" name="Laboratorium" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B18" name="Bibliothek" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B19" name="Markt" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B20" name="Händlerin" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B21" name="Miliz" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B22" name="Mine" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B23" name="Burggraben" typ="reaktion" kosten="2" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B24" name="Geldverleiher" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B25" name="Wilddiebin" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B26" name="Umbau" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B27" name="Torwächterin" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B28" name="Schmiede" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B29" name="Thronsaal" typ="aktion" kosten="4" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B30" name="Vasall" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B31" name="Dorf" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B32" name="Hexe" typ="aktion" kosten="5" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B33" name="Werkstatt" typ="aktion" kosten="3" wert="0" anzahl="30">
 	</Karte>
 </Karten>

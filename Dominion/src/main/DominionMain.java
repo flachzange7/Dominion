@@ -22,10 +22,6 @@ public class DominionMain
 		
 		m_spieler.printSpielerInfo();
 		
-		m_spieler.karteAbwerfen();
-		
-		m_spieler.printSpielerInfo();
-		
 		m_vorrat.printVorrat();
 
 	}
