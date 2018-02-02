@@ -14,14 +14,12 @@ public class Spieler {
 	private Hand m_hand;
 	private Ablagestapel m_ablagestapel;
 	private Nachziehstapel m_nachziehstapel;
-	private Vorrat m_vorrat;
 	
 	public Spieler()
 	{
 		m_hand = new Hand();
 		m_ablagestapel = new Ablagestapel();
 		m_nachziehstapel = new Nachziehstapel();
-		m_vorrat = new Vorrat();
 	}
 	
 // Nachziehstapel
@@ -68,7 +66,7 @@ public class Spieler {
 		}
 	}
 	
-	public void init()
+	public void init(Vorrat m_vorrat)
 	{
 		for(int i = 0; i != 7; i++) {
 			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat(1));

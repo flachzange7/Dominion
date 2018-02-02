@@ -12,7 +12,7 @@ public class DominionMain
 		Vorrat m_vorrat = new Vorrat();		
 		Spieler m_spieler = new Spieler();
 		
-		m_spieler.init();
+		m_spieler.init(m_vorrat);
 		
 		m_spieler.printSpielerInfo();
 		
