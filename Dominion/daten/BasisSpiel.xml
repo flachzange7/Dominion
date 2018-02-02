@@ -1,9 +1,25 @@
-<Karten>
-	<Karte id="B1" name="Anwesen" typ="punkte" kosten="1" wert="1" anzahl="20"></Karte>
-	<Karte id="B2" name="Herzogtum" typ="punkte" kosten="5" wert="2"
-		anzahl="10">
+<Karten id="B" name="Basisspiel">
+	<Karte id="B1" name="Anwesen" typ="punkte" kosten="2" wert="1" anzahl="20"></Karte>
+	<Karte id="B2" name="Herzogtum" typ="punkte" kosten="5" wert="3" anzahl="10"></Karte>
+	<Karte id="B3" name="Provinz" typ="punkte" kosten="8" wert="3" anzahl="10"></Karte>
+	<Karte id="B4" name="Kupfer" typ="geld" kosten="0" wert="1" anzahl="100"></Karte>
+	<Karte id="B5" name="Silber" typ="geld" kosten="3" wert="2" anzahl="50"></Karte>
+	<Karte id="B6" name="Gold" typ="geld" kosten="6" wert="3" anzahl="30"></Karte>
+	<Karte id="B7" name="Fluch" typ="punkte" kosten="0" wert="-1" anzahl="30"></Karte>
+	<Karte id="B8" name="Keller" typ="aktion" kosten="2" wert="0" anzahl="30">
 	</Karte>
-	<Karte id="B3" name="Provinz" typ="punkte" kosten="8" wert="3"
-		anzahl="10">
+	<Karte id="B9" name="Kapelle" typ="aktion" kosten="2" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B10" name="Burggraben" typ="reaktion" kosten="2" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B11" name="Der Vorläufer" typ="aktion" kosten="2" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B12" name="Der Händler" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B13" name="Der Vasall" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B14" name="Dorf" typ="aktion" kosten="3" wert="0" anzahl="30">
+	</Karte>
+	<Karte id="B15" name="Handwerker" typ="aktion" kosten="3" wert="0" anzahl="30">
 	</Karte>
 </Karten>
