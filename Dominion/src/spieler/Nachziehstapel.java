@@ -36,12 +36,26 @@ public class Nachziehstapel {
 		return karte;
 	}
 	
+	public void alleKartenAbwerfen(Ablagestapel m_ablagestapel)
+	{
+		while(m_stapel.isEmpty() != true)
+		{
+			m_ablagestapel.ablegen(m_stapel.get(0));
+			m_stapel.remove(0);
+		}
+	}
+	
 	@Override
 	public String toString()
 	{
 		String ausgabe = "";
-		for(int i = 0; i != m_stapel.size(); i++)
-			ausgabe += m_stapel.get(i).name() + ", ";
+		if(m_stapel.isEmpty() == true)
+			ausgabe = "Stapel ist leer!";
+		else
+		{
+			for(int i = 0; i != m_stapel.size(); i++)
+				ausgabe += m_stapel.get(i).name() + ", ";
+		}
 		return ausgabe;
 	}
 	

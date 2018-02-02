@@ -25,6 +25,15 @@ public class Hand {
 		return karte;
 	}
 	
+	public void alleKartenAbwerfen(Ablagestapel m_ablagestapel)
+	{
+		while(m_hand.isEmpty() != true)
+		{
+			m_ablagestapel.ablegen(m_hand.get(0));
+			m_hand.remove(0);
+		}
+	}
+	
 	@Override
 	public String toString()
 	{

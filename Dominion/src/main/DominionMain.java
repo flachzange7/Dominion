@@ -16,7 +16,7 @@ public class DominionMain
 		loader.ladeSpielInfo("daten/BasisSpiel.xml");
 		
 		
-		/*Spieler m_spieler = new Spieler();
+		Spieler m_spieler = new Spieler();
 		
 		m_spieler.init(m_vorrat);
 		
@@ -24,7 +24,7 @@ public class DominionMain
 		
 		m_spieler.karteAbwerfen();
 		
-		m_spieler.printSpielerInfo();*/
+		m_spieler.printSpielerInfo();
 		
 		m_vorrat.printVorrat();
 
