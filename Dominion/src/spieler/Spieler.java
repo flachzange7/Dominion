@@ -4,18 +4,24 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import daten.Karte;
+import daten.Vorrat;
+import spieler.Hand;
+import spieler.Nachziehstapel;
+import spieler.Ablagestapel;
 
 public class Spieler {
 	
 	private Hand m_hand;
 	private Ablagestapel m_ablagestapel;
 	private Nachziehstapel m_nachziehstapel;
+	private Vorrat m_vorrat;
 	
 	public Spieler()
 	{
 		m_hand = new Hand();
 		m_ablagestapel = new Ablagestapel();
 		m_nachziehstapel = new Nachziehstapel();
+		m_vorrat = new Vorrat();
 	}
 	
 // Nachziehstapel
@@ -45,7 +51,9 @@ public class Spieler {
 	
 	public void standardKartenZiehen()
 	{
-		m_hand.karteZiehen(m_nachziehstapel.bekommeKarte());
+		for(int i = 0; i != 5; i++) {
+			m_hand.karteZiehen(m_nachziehstapel.bekommeKarte());
+		}
 	}
 	
 	public void karteAbwerfen()
@@ -53,9 +61,22 @@ public class Spieler {
 		m_ablagestapel.ablegen(m_hand.karteAbwerfen());
 	}
 	
-	/*public void aktionKartenZiehen(Karte karte, int anzahl)
+	public void aktionKartenZiehen(Karte karte, int anzahl)
 	{
-		
-	}*/
+		for(int i = 0; i != anzahl; i++) {
+			m_ablagestapel.ablegen(m_hand.karteAbwerfen());
+		}
+	}
 	
+	public void init()
+	{
+		for(int i = 0; i != 7; i++) {
+			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat(1));
+		}
+		for(int i = 0; i != 3; i++) {
+			spielerBekommtKarte(m_vorrat.nimmKarteVonVorrat(4));
+		}
+		mischen();
+		standardKartenZiehen();
+	}
 }
