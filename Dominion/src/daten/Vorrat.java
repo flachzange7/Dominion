@@ -32,8 +32,10 @@ public class Vorrat
 	public Karte nimmKarteVonVorrat(String id)
 	{
 		for(int i = 0; i != m_stapel.size(); i++)
-			if(m_stapel.get(i).karte().id() == id)
+		{
+			if(m_stapel.get(i).karte().id().equals(id))
 				return m_stapel.get(i).zieheKarte();
+		}
 		
 		return null;
 	}
