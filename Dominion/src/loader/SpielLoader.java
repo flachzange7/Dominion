@@ -11,6 +11,8 @@ import org.w3c.dom.NodeList;
 
 import daten.EinheitsKartenStapel;
 import daten.Vorrat;
+import karten.AktionsKarte;
+import karten.GeldKarte;
 import karten.PunkteKarte;
 
 public class SpielLoader 
@@ -45,6 +47,14 @@ public class SpielLoader
 					case ("punkte"):
 						ladePunkteKarte(eElement);
 						break;
+						
+					case ("geld"):
+						ladeGeldKarte(eElement);
+						break;
+						
+					case ("aktion"):
+						ladeAktionKarte(eElement);
+						break;
 					
 					default:
 						
@@ -59,7 +69,7 @@ public class SpielLoader
 		
 	}
 	
-	public void ladePunkteKarte(Element element)
+	private void ladePunkteKarte(Element element)
 	{
 		String id = element.getAttribute("id").toString();
 		String name = element.getAttribute("name").toString();
@@ -68,6 +78,33 @@ public class SpielLoader
 		int anzahl = Integer.valueOf(element.getAttribute("anzahl")).intValue();
 		
 		PunkteKarte karte = new PunkteKarte(id, name, kosten, wert);
+		
+		EinheitsKartenStapel stapel = new EinheitsKartenStapel(karte, anzahl);
+		m_vorrat.addStapel(stapel);
+	}
+	
+	private void ladeGeldKarte(Element element)
+	{
+		String id = element.getAttribute("id").toString();
+		String name = element.getAttribute("name").toString();
+		int kosten = Integer.valueOf(element.getAttribute("kosten")).intValue();
+		int wert = Integer.valueOf(element.getAttribute("wert")).intValue();
+		int anzahl = Integer.valueOf(element.getAttribute("anzahl")).intValue();
+		
+		GeldKarte karte = new GeldKarte(id, name, kosten, wert);
+		
+		EinheitsKartenStapel stapel = new EinheitsKartenStapel(karte, anzahl);
+		m_vorrat.addStapel(stapel);
+	}
+	
+	private void ladeAktionKarte(Element element)
+	{
+		String id = element.getAttribute("id").toString();
+		String name = element.getAttribute("name").toString();
+		int kosten = Integer.valueOf(element.getAttribute("kosten")).intValue();
+		int anzahl = Integer.valueOf(element.getAttribute("anzahl")).intValue();
+		
+		AktionsKarte karte = new AktionsKarte(id, name, kosten);
 		
 		EinheitsKartenStapel stapel = new EinheitsKartenStapel(karte, anzahl);
 		m_vorrat.addStapel(stapel);
